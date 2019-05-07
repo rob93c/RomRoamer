@@ -14,26 +14,26 @@ class RomRoamer(object):
     def roam(times: int):
         keyboard = Controller()
         sleep(3)
-        for i in range(times + 1):
+        for i in range(times):
 
             # Go down
             keyboard.press(Key.down)
-            sleep(0.9)
+            sleep(0.8)
             keyboard.release(Key.down)
 
             # Go right
             keyboard.press(Key.right)
-            sleep(0.9)
+            sleep(0.8)
             keyboard.release(Key.right)
 
             # Go up
             keyboard.press(Key.up)
-            sleep(0.9)
+            sleep(0.8)
             keyboard.release(Key.up)
 
             # Go left
             keyboard.press(Key.left)
-            sleep(0.9)
+            sleep(0.8)
             keyboard.release(Key.left)
 
 

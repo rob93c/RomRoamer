@@ -7,11 +7,14 @@
 Use this script to roam in squares inside a ROM game, for instance Pokémon Red.
 The program works with every emulator using arrow keys to move around (GB/GBA/NDS games are supported).
 
+
+![RomRoamer Preview](demo/rom.gif)
+
 ## Instructions
 
 - First make sure you have installed [`python3`](https://www.python.org/downloads/) and [`pip`](https://pip.pypa.io/en/stable/installing/).
 - Install `pynput` using `pip install pynput`
-- Open the game and place yourself in an open area (at least 9x9).
+- Open the game and place yourself in an open area (at least 4x4).
 - At this point launch the script in the terminal browsing to its path and then use 
 `python3`[`RomRoamer.py`](https://github.com/rob93c/RomRoamer/blob/master/RomRoamer.py)
 - You now have 3 seconds to switch to the emulator's window so the program can let you wander around.
