@@ -3,9 +3,9 @@ from time import sleep
 
 """
 RomRoamer: automatically wander playing with 
-		   a GBC/GBA/NDS rom. (E.G. to hatch
-		   eggs in Pokémon games or level up 
-		   a Pokémon left at the Day Care)
+	   a GBC/GBA/NDS rom. (E.G. to hatch
+	   eggs in Pokémon games or level up 
+	   a Pokémon left at the Day Care)
 """
 
 
@@ -15,22 +15,27 @@ class RomRoamer(object):
         keyboard = Controller()
         sleep(3)
         for i in range(times + 1):
+
             # Go down
             keyboard.press(Key.down)
-            sleep(1)
+            sleep(0.9)
             keyboard.release(Key.down)
+
             # Go right
             keyboard.press(Key.right)
-            sleep(1)
+            sleep(0.9)
             keyboard.release(Key.right)
+
             # Go up
             keyboard.press(Key.up)
-            sleep(1)
+            sleep(0.9)
             keyboard.release(Key.up)
+
             # Go left
             keyboard.press(Key.left)
-            sleep(1)
+            sleep(0.9)
             keyboard.release(Key.left)
+
 
     num = input("How many times do you want to roam in a square? ")
     roam(int(num))
