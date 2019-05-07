@@ -9,12 +9,12 @@ The program works with every emulator using arrow keys to move around (GB/GBA/ND
 
 ## Instructions
 
-First make sure you have installed [`python3`](https://www.python.org/downloads/).
-Open the game and place yourself in an open area (at least 9x9).
-At this point launch the script in the terminal browsing to its path and then use 
+- First make sure you have installed [`python3`](https://www.python.org/downloads/).
+- Open the game and place yourself in an open area (at least 9x9).
+- At this point launch the script in the terminal browsing to its path and then use 
 `python3`[`RomRoamer.py`](https://github.com/rob93c/RomRoamer/blob/master/RomRoamer.py)
-You now have 3 seconds to switch to the emulator's window so the program can let you wander around.
-Keep in mind that this only works if you keep the emulator's window opened and in the foreground.
+- You now have 3 seconds to switch to the emulator's window so the program can let you wander around.
+- Keep in mind that this only works if you keep the emulator's window opened and in the foreground.
 
 Feel free to adapt the script to your needs, I.E. if you need to run along a vertical line just remove or comment `Go left` and `Go right` chunks.
 
