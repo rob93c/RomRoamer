@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 from pynput.keyboard import Key, Controller
 from time import sleep
 
@@ -39,7 +42,7 @@ class RomRoamer(object):
                 keyboard.release(Key.left)
 
         except ValueError as e:
-                msg = "Insert a valid number.\n{}: {}".format(type(e).__name__, e)
-                print(msg)
+            msg = "Insert a valid number.\n{}: {}".format(type(e).__name__, e)
+            print(msg)
 
     roam()

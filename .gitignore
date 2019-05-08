@@ -1,2 +1,5 @@
 # Ignore following files:
-.directory 
+.directory
+
+# Ignore following folders:
+.vscode/
