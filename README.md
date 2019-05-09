@@ -4,7 +4,7 @@
 
 # RomRoamer
 
-Use this script to roam in squares inside a ROM game, for instance Pokémon Red.
+Use this script to roam in squares inside a ROM game, for instance Pokémon Crystal.
 The program works with every emulator using arrow keys to move around (GB/GBA/NDS games are supported).
 
 
