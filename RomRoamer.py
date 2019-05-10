@@ -12,14 +12,17 @@ RomRoamer: automatically wander playing with
 """
 
 
-class RomRoamer(object):
+class RomRoamer:
 
-    def roam():
-        times = input("\nHow many times do you want to roam in a square? ")
+    def __init__(self) -> None:
+        self.times = int(
+            input("\nHow many times do you want to roam in a square? "))
+
+    def roam(self) -> None:
         try:
             keyboard = Controller()
             sleep(3)
-            for i in range(int(times)):
+            while self.times > 0:
 
                 # Go down
                 keyboard.press(Key.down)
@@ -41,8 +44,11 @@ class RomRoamer(object):
                 sleep(0.8)
                 keyboard.release(Key.left)
 
+                self.times -= 1
+
         except ValueError as e:
             msg = "Insert a valid number.\n{}: {}".format(type(e).__name__, e)
             print(msg)
 
-    roam()
+go = RomRoamer()
+go.roam()
