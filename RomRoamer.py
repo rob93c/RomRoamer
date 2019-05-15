@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+import sys
 from pynput.keyboard import Key, Controller
 from time import sleep
 
@@ -15,6 +16,7 @@ RomRoamer: automatically wander playing with
 class RomRoamer:
 
     def __init__(self) -> None:
+        sys.tracebacklimit = 0
         self.data = input("\nHow many times do you want to roam in a square? ")
         if not self.data.isdigit():
             raise ValueError("Insert a valid number.\n")
