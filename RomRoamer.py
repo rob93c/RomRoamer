@@ -50,5 +50,5 @@ class RomRoamer:
             self.times -= 1
 
 
-go = RomRoamer()
-go.main()
+if __name__ == '__main__':
+    RomRoamer().main()
